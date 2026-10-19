@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+body {
+    background: #eee;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    border:0;
+    background: #dedede;
+    height:1px;
+}
+
+header {
+    text-align: center;
+    color: #232323;
+}
+
+header .judul {
+    font-size: 17pt;
+}
+
+header .deskripsi {
+    font-size: 11pt;
+}
+
+.wrap {
+    width: 1300px;
+    margin:25px auto;
+}
+
+nav.menu ul {
+    overflow:hidden;
+    color:hsl(0, 4%, 62%);
+    list-style:none;
+    float:left;
+    padding:0;
+    width: 1300px;
+    margin: 0 0 0;
+    background: hsla(32, 93%, 57%, 0.658);
+    -webkit-box-shadow: 1px 1px 1px 0px hsl(0, 0%, 32%);
+    -moz-box-shadow: 1px 1px 1px 0px hsl(0, 0%, 32%);
+    box-shadow: 1px 1px 1px 0px hsl(0, 0%, 32%);
+}
+
+nav.menu ul li {
+    margin:0;
+    float:left;
+}
+
+nav.menu ul a {
+    padding:25px;
+    display:block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #eee;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+nav.menu ul a:hover {
+    text-decoration: underline;
+    background: #6e0000;
+}
+.sidebar {
+    float:right;
+    width: 275px;
+}
+
+.sidebar .widget {
+    padding:25px;
+    margin:25px auto;
+    background: #eee;
+    border-bottom: 2px solid #eee;
+    transition: all 0.5s ease;
+    font-size: 14px;
+}
+
+.sidebar .widget h2 {
+    padding: 0;
+    margin: 0 0 15px;
+    color: #295783;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.blog {
+    float: left;
+}
+
+.conteudo {
+    width: 950px;
+    padding: 25px;
+    margin: 25px auto;
+    background: #eee;
+    border:1px solid #232323;
+    -webkit-box-shadow: 1px 1px 1px 0px hsl(0, 0%, 32%);
+    -moz-box-shadow: 1px 1px 1px 0px hsl(0, 0%, 32%);
+    box-shadow: 1px 1px 1px 0px hsl(0, 0%, 32%);
+}
+
+.conteudo h1 {
+    padding: 0;
+    margin:0 0 15px;
+    font-weight: normal;
+    color: #295783;
+    font-family: Georgia;
+}
+
+@media screen and (max-width: 1300px) {
+    .header {
+        position:inherit;
+    }
+
+    .wrap  {
+        width: 90%;
+        margin: 25px auto;
+    }
+    .sidebar {
+        width: 100%;
+        margin: 25px 0 0;
+        float:right;
+    }
+
+    .sidebar .widget {
+        padding: 5%;
+    }
+
+    nav.menu ul {
+        width: 100%;
+    }
+
+    nav.menu ul {
+        float: inherit;
+    }
+
+    nav.menu ul li {
+        float: inherit;
+        margin: 0;
+    }
+    nav.menu ul a {
+        padding: 15px;
+        font-size: 16px;
+        border-top: 1px solid #438329;
+        border-bottom: 1px solid #4383298f;
+    }
+    .blog {
+        width: 90%;
+    }
+    .conteudo {
+        float: inherit;
+        margin: 0 auto 25px;
+        width: 101%;
+        border: 1px solid #dedede;
+        padding: 5%;
+        background: #eee;
+    }
+}
